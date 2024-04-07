@@ -1,0 +1,53 @@
+[data-callout="tabbed"] {
+  outline: 1px solid var(--color-base-38);
+  border-radius: 8px;
+}
+
+[data-callout="tabbed"] > .callout-content {
+  padding: 0.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, max-content)); /* Increase the minimum width of the button */
+  gap: 8px;
+}
+
+[data-callout="tabbed"] > .callout-title {
+  display: none;
+}
+
+[data-callout="tabbed"] > .callout-content p {
+  margin: 0;
+}
+
+[data-callout="tabbed"] > .callout-content button {
+  display: flex; /* Use flexbox to center text vertically */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  width: 100%;
+  padding: 0.5em 1em;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-buttons {
+  display: flex;
+  margin-top: 20px; /* Add spacing from the top */
+}
+
+.tab-button {
+  flex: 1;
+  padding: 1em 1em;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center; 
+  font-size: 1.2em;
+}
+
+/* Button state specific styles */
+.tab-buttons button#tab1.currently-reading { background-color: #F9BF3B; } /* Brighter Yellow for Currently Reading */
+.tab-buttons button#tab2.unfinished { background-color: #E74C3C; } /* Red for Unfinished */
+.tab-buttons button#tab3.finished { background-color: #2ECC71; } /* Green for Finished */
+.tab-buttons button#tab4.to-read { background-color: #3498DB; } /* Blue for To Read */
