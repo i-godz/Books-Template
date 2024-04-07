@@ -1,6 +1,6 @@
 # 1- Books Tracking Template
 
-This is my personal books tracking template and was made in Obsidian for future reference!
+This is my personal books tracking template and was made in Obsidian for future reference! <br>
 • You will need both comunity plugins "Book Search" and "Dataview". <br>
 • To download them, go to "Settings," then click on "Community Plugins." From there, find the "Browse" option, search for the desired plugin, download it, and enable it. <br>
 
